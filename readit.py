@@ -10,11 +10,11 @@ while True:
     clip = pyperclip.paste()
     if clip != '':
         print(clip)
-        f = open(os.path.realpath("~/")[:-1]+'tmp','w')
+        f = open('tmp','w')
         f.truncate()
         f.write(clip)
         f.close()
-        os.system('ekho -s 200 -r -25 -f ~/tmp')
+        os.system('bash readtmp.sh')
         pyperclip.copy('')
         print('listening...')
     time.sleep(1)
