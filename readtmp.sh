@@ -1,2 +1,2 @@
 #!/bin/bash
-ekho -s 160 -r -25 -f tmp
+ekho -s 200 -r -25 -f tmp
